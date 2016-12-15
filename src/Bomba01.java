@@ -5,10 +5,10 @@ public class Bomba01 {
 		// TODO Auto-generated method stub
 		
 	String mensaje = "Shingeki no Kiojin";
+	String mensajeEncriptado="";
 	
-	
-	encriptador(mensaje);
-	
+	mensajeEncriptado=encriptador(mensaje);
+	System.out.println(mensajeEncriptado);
 	}
 	
 	public static String encriptador(String mensaje){
@@ -25,12 +25,16 @@ public class Bomba01 {
 			mensajeEncriptado = mensajeEncriptado+ascii;
 			
 		}
+		 StringBuffer sb = new StringBuffer(mensajeEncriptado);
+		 
+		mensajeEncriptado = sb.reverse().toString();
 		
-		System.out.println(mensajeEncriptado);
+		
 		return mensajeEncriptado;
 		
 		
 	}
+	
 	
 	
 
