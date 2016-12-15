@@ -14,8 +14,9 @@ public class Bomba01 {
 	public static String encriptador(String mensaje){
 		
 		String mensajeEncriptado="";
-		int ascii;
-		char caracter;
+		int ascii=0;
+		char caracter=' ';
+		
 		for(int i=0;i<mensaje.length();i++){
 			
 			caracter = mensaje.charAt(i);
@@ -25,7 +26,8 @@ public class Bomba01 {
 			mensajeEncriptado = mensajeEncriptado+ascii;
 			
 		}
-		 StringBuffer sb = new StringBuffer(mensajeEncriptado);
+		
+		StringBuffer sb = new StringBuffer(mensajeEncriptado);
 		 
 		mensajeEncriptado = sb.reverse().toString();
 		
