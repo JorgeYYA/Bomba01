@@ -23,7 +23,7 @@ public class Bomba01 {
 			
 			ascii = (int) caracter;
 			
-			mensajeEncriptado = mensajeEncriptado+ascii;
+			mensajeEncriptado = mensajeEncriptado+ascii+" ";
 			
 		}
 		
